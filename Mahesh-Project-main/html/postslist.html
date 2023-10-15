@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Postlist page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../Styles/postlist.css"" />
+</head>
+
+<body>
+    <div>
+        <div class="upper">
+            <div>
+                <h1 id="logo">Scribbler</h1>
+                <p id="logo1">Explore, Imagine, Create</p>
+            </div>
+            <div class="signs">
+                <button class="sign" id="sign-up">Sign Up</button>
+
+                <div id="signup-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 class="modal-head">Get started</h2>
+                        <form>
+                            <label>Name</label>
+                            <input type="text" required placeholder="Enter your name">
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter ypur password">
+                            <label>Confirm password</label>
+                            <input type="password" required placeholder="Re-enter ypur password">
+                            <button id="sign-submit" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="sign" id="sign-in">Sign in</button>
+
+                <div id="signin-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close1">&times;</span>
+                        <h2 class="modal-head">Welcome Back!</h2>
+                        <form>
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter ypur password">
+                            <button id="sign-submit" type="submit">Sign Up</button>
+                        </form>
+                        <div class="signup-redirect">Not a member? <button class="signup-redirectButton"
+                                onclick="signupRedirectButton()">Sign Up</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="allposts" id="allPosts"></div>
+        <div id="trashModal" class="modal">
+            <div class="trashmodal-content">
+                <p id="delete-confirm">Are you sure you want to delete this post?</p>
+                <div class="btn-container">
+                    <button class="yes" id="yesButton" onclick="deletePost()">Yes</button>
+                    <button class="no" id="noButton" onclick="revert()">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/postlist.js"></script>
+</body>
+
+</html>

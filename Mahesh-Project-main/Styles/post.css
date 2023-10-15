@@ -1,0 +1,249 @@
+body {
+    margin: 0px;
+}
+
+#logo {
+    font-family: 'Montez', cursive;
+    border: 0px;
+    color: blue;
+    margin: 0px;
+}
+
+#logo1 {
+    font-family: 'Ubuntu Mono', cursive;
+    margin: 0px;
+}
+
+.signs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2px;
+    margin: 0.5% 0.5% 0% 0%;
+}
+
+.sign {
+    color: white;
+    background-color: blue;
+    padding: 7px;
+    border: 0;
+    width: 70px;
+    padding: 10px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.signup-redirectButton {
+    padding: 0;
+    color: blue;
+    font-weight: bolder;
+    margin: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+.signup-redirect {
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 13px;
+}
+
+input {
+    padding: 5px;
+    background-color: hsl(0, 6%, 91%);
+    margin: 0px;
+    border: 0;
+}
+
+textarea {
+    padding: 5px;
+    background-color: hsl(0, 6%, 91%);
+    margin: 0px;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+#sign-submit {
+    margin: 10px 0;
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+label {
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+.upper {
+    width: 99%;
+    height: 8vh;
+    border: 0%;
+    margin: 0.5% 0% 0% 0.5%;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-head {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+    font-family: sans-serif;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+}
+
+form {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lower {
+    width: 100%;
+    height: 91vh;
+    padding: 0%;
+}
+
+.post-details {
+    margin: 30px;
+}
+
+#post-title {
+    text-align: center;
+    font-family: 'Calibri', sans-serif;
+}
+
+#post-author {
+    display: inline-block;
+    margin: 0;
+    font-family: 'Calibri', sans-serif;
+}
+
+#post-content {
+
+    text-align: justify;
+}
+
+.save-edit {
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    padding: 5px 10px 5px 10px;
+}
+
+.updated {
+    margin-bottom: 0;
+}
+
+#like-button {
+    color: white;
+    background-color: red;
+    border: 0px;
+    padding: 5px 10px 5px 10px;
+    display: block;
+}
+
+#like-count {
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+#comment-input {
+    display: block;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.comment-button {
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    background-color: red;
+    color: white;
+    border: 0px;
+}
+
+#all-comments {
+    font-weight: bolder;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+
+}
+
+#comments-list {
+    display: none;
+    width: 70%;
+    margin: 10px 5px 10px 0px;
+    list-style-type: none;
+    padding: 5px 10px 5px 0;
+    background-color: hwb(0 83% 16%);
+}
+
+ul.comments-list li {
+    margin: 8px 0 8px 10px;
+    background-color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}

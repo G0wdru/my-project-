@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Post page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/post.css" />
+</head>
+
+<body>
+    <div>
+        <div class="upper">
+            <div>
+                <h1 id="logo">Scribbler</h1>
+                <p id="logo1">Explore, Imagine, Create</p>
+            </div>
+            <div class="signs">
+                <button id="sign-up" class="sign">Sign Up</button>
+
+                <div id="signup-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 class="modal-head">Get started</h2>
+                        <form>
+                            <label>Name</label>
+                            <input type="text" required placeholder="Enter your name">
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter ypur password">
+                            <label>Confirm password</label>
+                            <input type="password" required placeholder="Re-enter ypur password">
+                            <button id="sign-submit" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="sign" id="sign-in">Sign in</button>
+
+                <div id="signin-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close1">&times;</span>
+                        <h2 class="modal-head">Welcome Back!</h2>
+                        <form>
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter ypur password">
+                            <button id="sign-submit" type="submit">Sign Up</button>
+                        </form>
+                        <div class="signup-redirect">Not a member? <button class="signup-redirectButton"
+                                onclick="signupRedirectButton()">Sign Up</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-details">
+            <h1 id="post-title" contenteditable="false"></h1>
+            <p id="post-author"></p>
+            <span>
+                <button id="edit-button" class="save-edit" onclick="handleEdit()">Edit <i
+                        class="fa fa-pen-to-square"></i></button>
+            </span>
+            <p id="post-content" contenteditable="false"></p>
+
+            <!-- Like section -->
+
+            <button id="like-button" class="like-button" onclick="handleLike()"><i class="fa fa-thumbs-up"></i>
+                Like</button>
+            <div id="like-count"></div>
+
+            <!-- Comment section -->
+            <textarea rows="3" cols="205" id="comment-input" placeholder="Leave a comment..."></textarea>
+            <button class="comment-button" onclick="handleAddComment()">Comment</button>
+            <div id="all-comments">All comments</div>
+            <ul id="comments-list" class="comments-list"></ul>
+        </div>
+    </div>
+    <script src="../scripts/post.js"></script>
+</body>

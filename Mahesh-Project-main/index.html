@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="top">
+            <div>
+                <h1 id="logo1">Scribbler</h1>
+                <p id="logo2">Explore, Imagine, Create</p>
+            </div>
+
+            <div class="Signups">
+                <button class="Sign" id="SignUp">Sign Up</button>
+
+                <div id="Sign-up-model" class="model">
+                    <div class="model-content">
+                        <span class="close">&times;</span>
+                        <h2 class="model-header">Get started</h2>
+                        <form>
+                            <label>Name</label>
+                            <input type="text" required placeholder="Enter your name">
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter your password">
+                            <label>Confirm password</label>
+                            <input type="password" required placeholder="Re-enter your password">
+                            <button id="submit-btn" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="Sign" id="Signin">Sign In</button>
+
+                <div id="Sign-in-model" class="model">
+                    <div class="model-content">
+                        <span class="close1">&times;</span>
+                        <h2 class="model-header">Welcome Back!</h2>
+                        <form>
+                            <label>Username</label>
+                            <input type="text" required placeholder="Enter your username">
+                            <label>Password</label>
+                            <input type="password" required placeholder="Enter your password">
+                            <button id="submit-btn" type="submit">Sign up</button>
+                        </form>
+                        <div class="SignUp-Redirect">Not a member? <button class="SignUp-RedirectButton"
+                                onclick="signupRedirectButton()">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="low">
+            <div class="posts">
+                <button id="all" class="postbtn">
+                    <a href="./html/postslist.html" id="anchor">All Posts</a>
+                </button>
+
+                <button id="create" class="postbtn">Create Post</button>
+                <div id="createpost-model" class="model">
+                    <div class="model-content2">
+                        <span class="close2">&times;</span>
+                        <h2 class="model-header">Pen Your Post</h2>
+                        <form id="create-form">
+                            <label>Title</label>
+                            <input type="text" required placeholder="Enter title of your post">
+                            <label>Contents</label>
+                            <textarea rows="10" cols="50" id="comment-input"
+                                placeholder="Enter the contents of your post"></textarea>
+                            <div id="create-btn-container">
+                                <button id="create-btn" type="submit">Create
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
